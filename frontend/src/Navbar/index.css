@@ -1,0 +1,136 @@
+.topbar {
+    background: #0e1a3a;
+    color: gray;
+    font-size: 13px;
+}
+
+.top-left svg {
+    color: #ff0033;
+}
+
+.top-right svg {
+    color: #ff0033;
+}
+
+.divider {
+    color: #ff0033;
+}
+
+/* 🔷 NAV */
+.nav-bg {
+    background: #0e1a3a;
+    padding: 18px 0;
+}
+
+/* LOGO */
+.logo {
+    color: #ff0033;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo svg {
+    font-size: 32px;
+}
+
+/* SHAPE DESKTOP */
+.menu-shape {
+    background: #fff;
+    padding: 14px 42px;
+    transform: skewX(20deg);
+
+    flex: 1;
+    max-width: 720px;
+    margin: 0 20px;
+}
+
+.menu-links {
+    transform: skewX(-20deg);
+    display: flex;
+    gap: 28px;
+}
+
+.menu-links .nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.menu-links .nav-link:hover {
+    color: #ff0033;
+}
+
+/* ACTIONS */
+.search-box {
+    background: #ff0033;
+    color: #fff;
+    padding: 10px 14px;
+    transform: skewX(20deg);
+}
+
+.search-box span {
+    display: inline-block;
+    transform: skewX(-20deg);
+}
+
+.quote-btn {
+    background: #ff0033;
+    border: none;
+    transform: skewX(20deg);
+    padding: 10px 24px;
+    font-weight: 600;
+}
+
+/* ⭐ reset për tekstin */
+.quote-btn span {
+    display: inline-block;
+    transform: skewX(-20deg);
+}
+
+/* MOBILE BUTTON */
+.mobile-toggle {
+    background: #ff0033;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+}
+
+/* 📱 MOBILE MENU */
+.mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #e9dfcc;
+    padding: 25px;
+    display: none;
+    z-index: 999;
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+.menu-mobile-links .nav-link {
+    color: #555;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.menu-mobile-links .nav-link:first-child {
+    color: #ff0033;
+}
+
+.mobile-search {
+    background: #ff0033;
+    color: #fff;
+    padding: 10px 14px;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+/* 📱 ≤767px */
+@media (max-width: 767px) {
+    .menu-shape {
+        display: none;
+    }
+}
