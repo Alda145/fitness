@@ -7,10 +7,10 @@ import {
     FaTwitter,
     FaInstagram,
     FaLinkedinIn,
-    FaSearch,
     FaBars,
-    FaHandRock
-} from "react-icons/fa";
+
+} from "react-icons/fa6";
+import { FaHandRock, FaSearch } from "react-icons/fa";
 import "./index.css";
 
 export default function Header() {

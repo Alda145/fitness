@@ -38,7 +38,7 @@
     background: #fff;
     padding: 14px 42px;
     transform: skewX(20deg);
-
+    /*shtrembëron (pjerrëson) elementin horizontalisht djath */
     flex: 1;
     max-width: 720px;
     margin: 0 20px;
@@ -46,6 +46,7 @@
 
 .menu-links {
     transform: skewX(-20deg);
+    /*per ta mbajtur tekstin drejt */
     display: flex;
     gap: 28px;
 }
@@ -125,6 +126,7 @@
     color: #fff;
     padding: 10px 14px;
     width: fit-content;
+    /*gjerësia të jetë vetëm aq sa përmbajtja e tij */
     margin-top: 10px;
 }
 
@@ -143,6 +145,7 @@
     /* lejojmë wrap */
     .nav-bg .container {
         flex-wrap: wrap;
+        /*elementët brenda një container-i flex të kalojnë në rresht tjetër kur nuk ka më hapësirë. */
     }
 
     /* logo në rreshtin e parë */
@@ -152,14 +155,17 @@
 
     /* actions në të djathtë rreshti 1 */
     .nav-bg .ms-auto {
-        flex: 0 0 auto;
+         flex: 0 0 auto;
+        /*  nuk prekim madhesine */
     }
+
+
 
     /* menu në rreshtin e dytë full width */
     .menu-shape {
         order: 3;
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 100%;/*  sillet si një bllok që zë të gjithë gjerësinë e rreshtit dhe nuk ndryshon madhësi */
+        max-width: 100%; 
         margin: 12px 0 0 0;
         padding: 12px 20px;
     }

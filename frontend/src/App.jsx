@@ -1,6 +1,7 @@
 
 
 import MainNavbar from './Navbar'
+import Home from './Pages/Home'
 //import './App.css'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <MainNavbar />
+      <Home />
       <h1>Vite + React</h1>
 
     </>
