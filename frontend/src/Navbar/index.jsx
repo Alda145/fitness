@@ -18,7 +18,7 @@ export default function Header() {
 
     return (
         <>
-            {/* 🔝 TOPBAR */}
+            {/*  TOPBAR */}
             <div className="topbar">
                 <Container className="d-flex justify-content-between align-items-center flex-wrap py-1">
 
@@ -41,7 +41,7 @@ export default function Header() {
                 </Container>
             </div>
 
-            {/* 🔷 MAIN NAV */}
+            {/* MAIN NAV */}
             <div className="nav-bg position-relative">
                 <Container className="d-flex align-items-center">
 
@@ -84,7 +84,7 @@ export default function Header() {
                     </div>
                 </Container>
 
-                {/* 📱 MOBILE MENU */}
+                {/* MOBILE MENU */}
                 <div className={`mobile-menu ${open ? "show" : ""}`}>
                     <Nav className="flex-column menu-mobile-links">
                         <Nav.Link>Home</Nav.Link>

@@ -16,7 +16,7 @@
     color: #ff0033;
 }
 
-/* 🔷 NAV */
+/* NAV */
 .nav-bg {
     background: #0e1a3a;
     padding: 18px 0;
@@ -80,7 +80,7 @@
     font-weight: 600;
 }
 
-/* ⭐ reset për tekstin */
+/* reset për tekstin */
 .quote-btn span {
     display: inline-block;
     transform: skewX(-20deg);
@@ -94,7 +94,7 @@
     padding: 8px 12px;
 }
 
-/* 📱 MOBILE MENU */
+/* MOBILE MENU */
 .mobile-menu {
     position: absolute;
     top: 100%;
@@ -128,9 +128,44 @@
     margin-top: 10px;
 }
 
-/* 📱 ≤767px */
+/*  ≤767px */
 @media (max-width: 767px) {
     .menu-shape {
         display: none;
+    }
+}
+
+
+
+/* TABLET 768px → 1199px  — navbar bëhet 2 rreshta */
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    /* lejojmë wrap */
+    .nav-bg .container {
+        flex-wrap: wrap;
+    }
+
+    /* logo në rreshtin e parë */
+    .logo {
+        flex: 0 0 auto;
+    }
+
+    /* actions në të djathtë rreshti 1 */
+    .nav-bg .ms-auto {
+        flex: 0 0 auto;
+    }
+
+    /* menu në rreshtin e dytë full width */
+    .menu-shape {
+        order: 3;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 12px 0 0 0;
+        padding: 12px 20px;
+    }
+
+    /* links të centruar */
+    .menu-links {
+        justify-content: center;
     }
 }
