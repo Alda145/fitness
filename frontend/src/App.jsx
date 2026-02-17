@@ -11,7 +11,7 @@ function App() {
     <>
       <MainNavbar />
       <Home />
-      <h1>Vite + React</h1>
+      <h1 style={{ height: "70vh" }}>Vite + React</h1>
 
     </>
   )
