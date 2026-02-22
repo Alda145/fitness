@@ -10,12 +10,15 @@
 
 .imageCouple {
     height: 100%;
+    align-items: flex-end;
 }
 
 .about-image {
     object-fit: cover;
     width: 100%;
+    transform: translateY(60px);
 }
+
 
 .ourMission {
     background-color: #c80036;
@@ -94,22 +97,25 @@
 .phone {
     display: inline-block;
     background-color: #fff5e1 !important;
+    color :#c80036;
     border: none;
     transform: skewX(20deg);
 
 }
 
-.phone span:first-child {
-    color: #c80036;
+.phone span {
     display: inline-block;
     transform: skewX(-20deg);
+
+}
+.phone:hover {
+    background-color: #c80036 !important;
+    color:white ;
+    display: inline-block;
+   
 }
 
-.phone span:last-child {
-    color: #0e1a3a;
-    display: inline-block;
-    transform: skewX(-20deg);
-}
+
 
 .gap-app {
     gap: 4rem;
@@ -119,8 +125,13 @@
     gap: 2rem;
 }
 
+.z-2 {
+    position: relative;
+    z-index: 2;
+}
+
 /* background diagonal */
-@media (min-width: 992px) {
+
     .about-section::before {
         content: "";
         position: absolute;
@@ -132,4 +143,3 @@
         transform: skew(28deg);
         z-index: 0;
     }
-}

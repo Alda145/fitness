@@ -4,7 +4,7 @@ import "./index.css";
 import aboutSection from '../../../images/aboutSection.png'
 import { FaRocket } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-import { FaComment } from "react-icons/fa";
+
 
 
 
@@ -14,7 +14,7 @@ const AboutSection = () => {
             <Container>
                 <Row className="align-items-center g-5">
                     {/* TEXT */}
-                    <Col xl={6} lg={6} className="mb-5 mb-lg-0">
+                    <Col xl={6} lg={6} className="mb-5 mb-lg-0 z-2">
                         <small className="text-color-about  fw-bold">About Fitness Center</small>
 
                         <h1 className="fw-bold display-5 my-3">
@@ -49,9 +49,9 @@ const AboutSection = () => {
                                 <span>Make Appointment</span>
                             </Button>
                             <div className="d-flex align-items-center gap-call">
-                                <div className="phone">
-                                    <span><FaPhoneAlt className="fs-2"/></span> 
-                                    <span> <FaComment className="fs-4"  /></span> 
+                                <div className="phone p-2">
+                                    <span><FaPhoneAlt className="fs-2" /></span>
+                                   
                                 </div>
                                 <div>
                                     <div className="text-secondary small">Call to Our Experts</div>
