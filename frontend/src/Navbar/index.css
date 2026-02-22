@@ -5,15 +5,15 @@
 }
 
 .top-left svg {
-    color: #ff0033;
+    color: #c80036;
 }
 
 .top-right svg {
-    color: #ff0033;
+    color: #c80036;
 }
 
 .divider {
-    color: #ff0033;
+    color: #c80036;
 }
 
 /* NAV */
@@ -24,7 +24,7 @@
 
 /* LOGO */
 .logo {
-    color: #ff0033;
+    color: #c80036;
     font-size: 28px;
     font-weight: 700;
 }
@@ -57,12 +57,12 @@
 }
 
 .menu-links .nav-link:hover {
-    color: #ff0033;
+    color: #c80036;
 }
 
 /* ACTIONS */
 .search-box {
-    background: #ff0033;
+    background: #c80036;
     color: #fff;
     padding: 10px 14px;
     transform: skewX(20deg);
@@ -74,7 +74,7 @@
 }
 
 .quote-btn {
-    background: #ff0033;
+    background: #c80036;
     border: none;
     transform: skewX(20deg);
     padding: 10px 24px;
@@ -89,7 +89,7 @@
 
 /* MOBILE BUTTON */
 .mobile-toggle {
-    background: #ff0033;
+    background: #c80036;
     border: none;
     color: #fff;
     padding: 8px 12px;
@@ -118,11 +118,11 @@
 }
 
 .menu-mobile-links .nav-link:first-child {
-    color: #ff0033;
+    color: #c80036;
 }
 
 .mobile-search {
-    background: #ff0033;
+    background: #c80036;
     color: #fff;
     padding: 10px 14px;
     width: fit-content;

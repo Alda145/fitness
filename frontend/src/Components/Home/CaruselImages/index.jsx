@@ -66,11 +66,15 @@ const CaruselImages = () => {
 
                 <div className="arrows">
                     <button onClick={prevFunction}>
-                        <span> <BsArrowLeft /></span>  
+                        <span className="arrow-inner">
+                            <BsArrowLeft />
+                        </span>
                     </button>
 
                     <button onClick={nextFunction}>
-                        <BsArrowRight />
+                        <span className="arrow-inner">
+                            <BsArrowRight />
+                        </span>
                     </button>
                 </div>
             </div>
