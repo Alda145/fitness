@@ -44,14 +44,14 @@ const AboutSection = () => {
                         </div>
                         <div className="border-bottom"></div>
 
-                        <div className="d-flex align-items-center gap-app mt-4">
+                        {<div className="d-flex align-items-center gap-app mt-4">
                             <Button variant="" size="lg" className="makeAppointment">
                                 <span>Make Appointment</span>
                             </Button>
                             <div className="d-flex align-items-center gap-call">
                                 <div className="phone p-2">
                                     <span><FaPhoneAlt className="fs-2" /></span>
-                                   
+
                                 </div>
                                 <div>
                                     <div className="text-secondary small">Call to Our Experts</div>
@@ -59,7 +59,8 @@ const AboutSection = () => {
                                 </div>
                             </div>
 
-                        </div>
+                        </div>}
+
                     </Col>
 
                     {/* IMAGE */}

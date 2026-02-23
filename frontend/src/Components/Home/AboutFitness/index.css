@@ -97,7 +97,7 @@
 .phone {
     display: inline-block;
     background-color: #fff5e1 !important;
-    color :#c80036;
+    color: #c80036;
     border: none;
     transform: skewX(20deg);
 
@@ -108,11 +108,12 @@
     transform: skewX(-20deg);
 
 }
+
 .phone:hover {
     background-color: #c80036 !important;
-    color:white ;
+    color: white;
     display: inline-block;
-   
+
 }
 
 
@@ -132,14 +133,14 @@
 
 /* background diagonal */
 
-    .about-section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -350px;
-        width: 65%;
-        height: 100%;
-        background: #c80036;
-        transform: skew(28deg);
-        z-index: 0;
-    }
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -350px;
+    width: 65%;
+    height: 100%;
+    background: #c80036;
+    transform: skew(28deg);
+    z-index: 0;
+}

@@ -1,5 +1,6 @@
 import CaruselImages from "../../Components/Home/CaruselImages";
 import AboutSection from "../../Components/Home/AboutFitness";
+import GoalSection from "../../Components/Home/GoalSection";
 
 const Home = () => {
 
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <CaruselImages />
             <AboutSection />
+            <GoalSection />
         </>
 
     )
