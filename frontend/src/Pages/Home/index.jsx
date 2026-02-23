@@ -1,6 +1,7 @@
 import CaruselImages from "../../Components/Home/CaruselImages";
 import AboutSection from "../../Components/Home/AboutFitness";
 import GoalSection from "../../Components/Home/GoalSection";
+import HighlightsSection from "../../Components/Home/HighlightSection";
 
 const Home = () => {
 
@@ -9,6 +10,7 @@ const Home = () => {
             <CaruselImages />
             <AboutSection />
             <GoalSection />
+            <HighlightsSection />
         </>
 
     )
