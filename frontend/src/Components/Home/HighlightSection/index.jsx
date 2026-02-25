@@ -48,22 +48,22 @@ export default function HighlightSection() {
         };
 
         handleResize();
-        window.addEventListener("resize", handleResize);
+        window.addEventListener("resize", handleResize);  //dëgjon ndryshimin e madhësisë së ekranit
 
 
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     const next = () => {
-        if (startIndex < items.length - cardsPerView) {
-            setStartIndex(startIndex + 1);
+        if (startIndex < items.length - cardsPerView) {  //kontrollon që mos të dalë jashtë array
+            setStartIndex(startIndex + 1); //pastaj lëviz një kartë përpara
         }
     };
 
     //  PREV
     const prev = () => {
         if (startIndex > 0) {
-            setStartIndex(startIndex - 1);
+            setStartIndex(startIndex - 1); //lëviz një kartë mbrapa
         }
     };
 
