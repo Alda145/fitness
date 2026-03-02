@@ -28,6 +28,10 @@
     color: #ffffff !important;
 }
 
+.courses .card:hover .imageStyle {
+    filter: grayscale(0%) !important;
+}
+
 .classSkew {
 
     transform: skewX(-5deg);
