@@ -31,6 +31,8 @@ const GoalSection = () => {
                                     src={icon1}
                                     alt="fitness"
                                     className="img-fluid p-2 "
+                                    width={'50px'}
+                                    height={'50px'}
                                 />
                             </div>
                             <div>
@@ -49,6 +51,8 @@ const GoalSection = () => {
                                     src={icon6}
                                     alt="fitness"
                                     className="img-fluid p-2 "
+                                    width={'50px'}
+                                    height={'50px'}
                                 />
                             </div>
                             <div>

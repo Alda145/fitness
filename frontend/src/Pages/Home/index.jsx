@@ -6,6 +6,8 @@ import CoursesSection from "../../Components/Home/CoursesSection";
 import BlogSection from "../../Components/Home/BlogSection";
 import ExploreSection from "../../Components/Home/ExploreSection";
 import TeamSection from "../../Components/Home/TeamSection";
+import Testimonials from "../../Components/Home/Testimonial";
+import Footer from "../../Footer";
 
 
 const Home = () => {
@@ -20,6 +22,8 @@ const Home = () => {
             <BlogSection />
             <ExploreSection />
             <TeamSection />
+            <Testimonials />
+            <Footer />
         </>
 
     )
