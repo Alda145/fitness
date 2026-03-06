@@ -175,3 +175,14 @@
         justify-content: center;
     }
 }
+.nav-bg{
+
+    z-index: 9999;/* qe dropdowni te dale siper  */
+}
+
+.nav-item-link.active {
+    color: #c80036;
+}
+.dropdown-item.active {
+    background-color: white !important;
+}

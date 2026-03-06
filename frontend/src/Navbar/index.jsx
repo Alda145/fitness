@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa6";
 import { FaHandRock, FaSearch } from "react-icons/fa";
 import "./index.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
     const [open, setOpen] = useState(false);
@@ -55,26 +55,26 @@ export default function Header() {
                     {/* DESKTOP MENU */}
                     <div className="menu-shape d-none d-md-block">
                         <Nav className="menu-links">
-                            <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/about">About</Nav.Link>
-                            <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
-                            <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
+                            <Nav.Link as={NavLink} to="/" end className="nav-item-link" >Home</Nav.Link>
+                            <Nav.Link as={NavLink} to="/about" className="nav-item-link">About</Nav.Link>
+                            <Nav.Link as={NavLink} to="/courses" className="nav-item-link">Courses</Nav.Link>
+                            <Nav.Link as={NavLink} to="/blogs" className="nav-item-link">Blogs</Nav.Link>
                             <NavDropdown title="Pages" id="pages-dropdown">
 
-                                <NavDropdown.Item as={Link} to="/features">
+                                <NavDropdown.Item as={NavLink} to="/features" className="nav-item-link">
                                     Our Features
                                 </NavDropdown.Item>
 
-                                <NavDropdown.Item as={Link} to="/testimonial">
+                                <NavDropdown.Item as={NavLink} to="/testimonial" className="nav-item-link">
                                     Testimonial
                                 </NavDropdown.Item>
 
-                                <NavDropdown.Item as={Link} to="/team">
+                                <NavDropdown.Item as={NavLink} to="/team" className="nav-item-link">
                                     Our Team
                                 </NavDropdown.Item>
 
                             </NavDropdown>
-                            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                            <Nav.Link as={NavLink} to="/contact" className="nav-item-link">Contact</Nav.Link>
                         </Nav>
                     </div>
 
@@ -102,26 +102,26 @@ export default function Header() {
                 {/* MOBILE MENU */}
                 <div className={`mobile-menu ${open ? "show" : ""}`}>
                     <Nav className="flex-column menu-mobile-links">
-                        <Nav.Link as={Link} to="/">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/about">About</Nav.Link>
-                        <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
-                        <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-                        <NavDropdown title="Pages" id="pages-dropdown">
+                        <Nav.Link as={NavLink} to="/" className="nav-item-link">Home</Nav.Link>
+                        <Nav.Link as={NavLink} to="/about" className="nav-item-link">About</Nav.Link>
+                        <Nav.Link as={NavLink} to="/courses" className="nav-item-link">Courses</Nav.Link>
+                        <Nav.Link as={NavLink} to="/blogs" className="nav-item-link">Blogs</Nav.Link>
+                        <NavDropdown title="Pages" id="pages-dropdown"  className="dropdown-menu">
 
-                            <NavDropdown.Item as={Link} to="/features">
+                            <NavDropdown.Item as={NavLink} to="/features" className="nav-item-link">
                                 Our Features
                             </NavDropdown.Item>
 
-                            <NavDropdown.Item as={Link} to="/testimonial">
+                            <NavDropdown.Item as={NavLink} to="/testimonial" className="nav-item-link">
                                 Testimonial
                             </NavDropdown.Item>
 
-                            <NavDropdown.Item as={Link} to="/team">
+                            <NavDropdown.Item as={NavLink} to="/team" className="nav-item-link">
                                 Our Team
                             </NavDropdown.Item>
 
                         </NavDropdown>
-                        <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                        <Nav.Link as={NavLink} to="/contact" className="nav-item-link">Contact</Nav.Link>
                     </Nav>
 
                     <div className="mobile-search">
