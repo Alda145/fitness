@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa6";
 import { FaHandRock, FaSearch } from "react-icons/fa";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     const [open, setOpen] = useState(false);
@@ -54,12 +55,12 @@ export default function Header() {
                     {/* DESKTOP MENU */}
                     <div className="menu-shape d-none d-md-block">
                         <Nav className="menu-links">
-                            <Nav.Link>Home</Nav.Link>
-                            <Nav.Link>About</Nav.Link>
-                            <Nav.Link>Courses</Nav.Link>
-                            <Nav.Link>Blogs</Nav.Link>
-                            <Nav.Link>Pages</Nav.Link>
-                            <Nav.Link>Contact</Nav.Link>
+                            <Nav.Link as={Link} to="/">Home</Nav.Link>
+                            <Nav.Link as={Link} to="/about">About</Nav.Link>
+                            <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
+                            <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
+                            <Nav.Link as={Link} to="/pages">Pages</Nav.Link>
+                            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                         </Nav>
                     </div>
 
@@ -87,12 +88,12 @@ export default function Header() {
                 {/* MOBILE MENU */}
                 <div className={`mobile-menu ${open ? "show" : ""}`}>
                     <Nav className="flex-column menu-mobile-links">
-                        <Nav.Link>Home</Nav.Link>
-                        <Nav.Link>About</Nav.Link>
-                        <Nav.Link>Courses</Nav.Link>
-                        <Nav.Link>Blogs</Nav.Link>
-                        <Nav.Link>Pages</Nav.Link>
-                        <Nav.Link>Contact</Nav.Link>
+                        <Nav.Link as={Link} to="/">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/about">About</Nav.Link>
+                        <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
+                        <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
+                        <Nav.Link as={Link} to="/pages">Pages</Nav.Link>
+                        <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                     </Nav>
 
                     <div className="mobile-search">

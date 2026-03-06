@@ -2,6 +2,10 @@
 
 import MainNavbar from './Navbar'
 import Home from './Pages/Home'
+import About from './Pages/About/index'
+import Footer from './Footer/index'
+import { Routes, Route } from 'react-router-dom'
+
 //import './App.css'
 
 function App() {
@@ -10,8 +14,13 @@ function App() {
   return (
     <>
       <MainNavbar />
-      <Home />
-      <h1 style={{ height: "70vh" }}>Vite + React</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+
+      </Routes>
+      <Footer/>
+      
 
     </>
   )
