@@ -17,7 +17,7 @@ const BreadcrumbSection = ({ title, current }) => {
                             Home
                         </Breadcrumb.Item>
 
-                        <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/pages" }}>
+                        <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/features" }}>
                             Pages
                         </Breadcrumb.Item>
 

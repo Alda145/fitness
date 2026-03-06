@@ -6,7 +6,10 @@ import About from './Pages/About/index'
 import Footer from './Footer/index'
 import { Routes, Route } from 'react-router-dom'
 import Courses from './Pages/Courses'
-import Blogs from './Pages/Blogs'
+import Blogs from './Pages/Blogs';
+import Features from './Pages/Pages/Features'
+import Testimonial from './Pages/Pages/Testimonial'
+import Team from './Pages/Pages/Team'
 
 //import './App.css'
 
@@ -21,10 +24,13 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/blogs" element={<Blogs />} />
-        
+        <Route path="/features" element={<Features />} />
+        <Route path="/testimonial" element={<Testimonial />} />
+        <Route path="/team" element={<Team />} />
+
       </Routes>
-      <Footer/>
-      
+      <Footer />
+
 
     </>
   )
