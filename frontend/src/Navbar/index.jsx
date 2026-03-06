@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Nav, Button } from "react-bootstrap";
+import { Container, Nav, Button, NavDropdown } from "react-bootstrap";
 import {
     FaEnvelope,
     FaClock,
@@ -59,7 +59,21 @@ export default function Header() {
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
                             <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
                             <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-                            <Nav.Link as={Link} to="/pages">Pages</Nav.Link>
+                            <NavDropdown title="Pages" id="pages-dropdown">
+
+                                <NavDropdown.Item as={Link} to="/features">
+                                    Our Features
+                                </NavDropdown.Item>
+
+                                <NavDropdown.Item as={Link} to="/testimonial">
+                                    Testimonial
+                                </NavDropdown.Item>
+
+                                <NavDropdown.Item as={Link} to="/team">
+                                    Our Team
+                                </NavDropdown.Item>
+
+                            </NavDropdown>
                             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                         </Nav>
                     </div>
@@ -92,7 +106,21 @@ export default function Header() {
                         <Nav.Link as={Link} to="/about">About</Nav.Link>
                         <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
                         <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-                        <Nav.Link as={Link} to="/pages">Pages</Nav.Link>
+                        <NavDropdown title="Pages" id="pages-dropdown">
+
+                            <NavDropdown.Item as={Link} to="/features">
+                                Our Features
+                            </NavDropdown.Item>
+
+                            <NavDropdown.Item as={Link} to="/testimonial">
+                                Testimonial
+                            </NavDropdown.Item>
+
+                            <NavDropdown.Item as={Link} to="/team">
+                                Our Team
+                            </NavDropdown.Item>
+
+                        </NavDropdown>
                         <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                     </Nav>
 
