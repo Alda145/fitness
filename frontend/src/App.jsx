@@ -10,6 +10,7 @@ import Blogs from './Pages/Blogs';
 import Features from './Pages/Pages/Features'
 import Testimonial from './Pages/Pages/Testimonial'
 import Team from './Pages/Pages/Team'
+import Contact from './Pages/Contact'
 
 //import './App.css'
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/features" element={<Features />} />
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/contact" element={<Contact />} />
 
       </Routes>
       <Footer />

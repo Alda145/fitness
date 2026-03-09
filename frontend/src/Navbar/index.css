@@ -183,6 +183,8 @@
 .nav-item-link.active {
     color: #c80036;
 }
+.dropdown-item:focus,
 .dropdown-item.active {
-    background-color: white !important;
+    color: white !important;
+    background-color: #c80036 !important;
 }
